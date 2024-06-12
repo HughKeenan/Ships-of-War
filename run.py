@@ -1,12 +1,19 @@
 from random import randint
 
 TARGET_GUESSES = []
-for x in range(5):
+for x in range(4):
     TARGET_GUESSES.append(x)
 
 TARGET_COORDINATES = []
-for x in range(5):
+for x in range(4):
     TARGET_COORDINATES.append(x)
 
-print(TARGET_COORDINATES, TARGET_GUESSES)
+def show_coordinates(map):
+    print("A B C D")
+    line_number = 1
+    for line in map:
+        print("%d|%s|" % line_number, "|".join(line))
+        line_number +=1
 
+
+show_coordinates(map)

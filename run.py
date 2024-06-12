@@ -9,11 +9,11 @@ for x in range(4):
     TARGET_COORDINATES.append(x)
 
 def show_coordinates(map):
+    """
+    Displays the grid on which the game is played
+    """
     print("A B C D")
-    line_number = 1
-    for line in map:
-        print("%d|%s|" % line_number, "|".join(line))
-        line_number +=1
+    
 
 
-show_coordinates(map)
+show_coordinates()
